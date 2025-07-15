@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryptex - Game Developer Portfolio</title>
+    <meta name="description" content="Roblox game developer and Lua specialist creating immersive gaming experiences">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="background-container">
+        <div class="grid-background">
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="mouse-follower"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" id="nav-logo">Kryptex</div>
+            <div class="nav-links">
+                <button class="nav-link" data-target="about">About</button>
+                <button class="nav-link" data-target="projects">Projects</button>
+                <button class="nav-link" data-target="skills">Skills</button>
+                <button class="nav-link" data-target="contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <h1 class="hero-title" id="hero-title">Kryptex</h1>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>ONLINE</span>
+                    <div class="status-bar"></div>
+                </div>
+            </div>
+            <div class="hero-description">
+                <p><span class="prompt-cyan">&gt;</span> Game Developer & Lua Specialist</p>
+                <p><span class="prompt-gray">&gt;</span> Creating immersive Roblox experiences</p>
+                <p><span class="prompt-cyan">&gt;</span> Security & Performance focused</p>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-target="projects">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16,18 22,12 16,6"></polyline>
+                        <polyline points="8,6 2,12 8,18"></polyline>
+                    </svg>
+                    View Projects
+                </button>
+                <button class="btn btn-secondary" onclick="openLink('https://github.com/kryptex')">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Developer Profile</h3>
+                            </div>
+                            <p class="card-text">
+                                <span class="prompt-cyan">$</span> Passionate game developer specializing in Roblox and Lua programming. I create immersive gaming experiences with focus on performance, security, and user engagement. My expertise spans from complex game mechanics to intuitive user interfaces.
+                            </p>
+                            <div class="badges">
+                                <span class="badge badge-cyan">
+                                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    GAME_DEV
+                                </span>
+                                <span class="badge badge-gray">
+                                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16,18 22,12 16,6"></polyline>
+                                        <polyline points="8,6 2,12 8,18"></polyline>
+                                    </svg>
+                                    LUA_EXPERT
+                                </span>
+                                <span class="badge badge-cyan">
+                                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                    SECURITY
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-item" data-level="95">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="4,17 10,11 4,5"></polyline>
+                                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                                    </svg>
+                                </div>
+                                <span>Lua Scripting</span>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="90">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <span>Roblox Studio</span>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="85">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16,18 22,12 16,6"></polyline>
+                                        <polyline points="8,6 2,12 8,18"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Game Development</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="80">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <span>Security Systems</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="75">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                                        <line x1="7" y1="2" x2="7" y2="22"></line>
+                                        <line x1="17" y1="2" x2="17" y2="22"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="2" y1="7" x2="7" y2="7"></line>
+                                        <line x1="2" y1="17" x2="7" y2="17"></line>
+                                        <line x1="17" y1="17" x2="22" y2="17"></line>
+                                        <line x1="17" y1="7" x2="22" y2="7"></line>
+                                    </svg>
+                                </div>
+                                <span>UI/UX Design</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                    </svg>
+                                </div>
+                                <span>Performance Optimization</span>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    <span class="prompt-cyan">&gt;</span> Explore my latest Roblox games and development tools
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card project-hover">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x200/1a1a1a/06b6d4?text=Admin+System" alt="Roblox Admin System">
+                            <div class="project-overlay"></div>
+                            <div class="project-status">
+                                <span class="badge badge-cyan">Active</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kryptex/roblox-admin" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.roblox.com/games/123456789" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Roblox Admin System</h3>
+                            <p class="project-description">Advanced admin panel with custom commands and moderation tools</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Lua</span>
+                                <span class="tech-badge">Roblox Studio</span>
+                                <span class="tech-badge">DataStore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card project-hover">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x200/1a1a1a/9ca3af?text=Economy+Script" alt="Game Economy Script">
+                            <div class="project-overlay"></div>
+                            <div class="project-status">
+                                <span class="badge badge-gray">Updated</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kryptex/game-economy" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.roblox.com/games/987654321" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Game Economy Script</h3>
+                            <p class="project-description">Complete economy system with shops, trading, and currency management</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Lua</span>
+                                <span class="tech-badge">RemoteEvents</span>
+                                <span class="tech-badge">GUI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card project-hover">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x200/1a1a1a/06b6d4?text=Anti-Exploit" alt="Anti-Exploit System">
+                            <div class="project-overlay"></div>
+                            <div class="project-status">
+                                <span class="badge badge-cyan">Secure</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kryptex/anti-exploit" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://devforum.roblox.com/t/anti-exploit-system" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Anti-Exploit System</h3>
+                            <p class="project-description">Robust security system to prevent cheating and exploits</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Lua</span>
+                                <span class="tech-badge">ServerScript</span>
+                                <span class="tech-badge">Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card project-hover">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x200/1a1a1a/9ca3af?text=GUI+Framework" alt="Custom GUI Framework">
+                            <div class="project-overlay"></div>
+                            <div class="project-status">
+                                <span class="badge badge-gray">Beta</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kryptex/gui-framework" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://create.roblox.com/marketplace/asset/123456789" class="project-link" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Custom GUI Framework</h3>
+                            <p class="project-description">Reusable UI components for Roblox game development</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Lua</span>
+                                <span class="tech-badge">TweenService</span>
+                                <span class="tech-badge">UI Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <!-- This section is integrated into About section -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    <span class="prompt-cyan">&gt;</span> Ready to collaborate on your next Roblox project?
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="card contact-hover">
+                        <div class="card-content contact-content">
+                            <div class="contact-icon contact-icon-github">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Check out my repositories</p>
+                            <button class="btn btn-outline btn-cyan" onclick="openLink('https://github.com/kryptex')">
+                                Visit Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="card contact-hover">
+                        <div class="card-content contact-content">
+                            <div class="contact-icon contact-icon-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Let's discuss your project</p>
+                            <button class="btn btn-outline btn-gray" onclick="openLink('mailto:kryptex@example.com')">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="card contact-hover">
+                        <div class="card-content contact-content">
+                            <div class="contact-icon contact-icon-roblox">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3>Roblox</h3>
+                            <p>Play my games</p>
+                            <button class="btn btn-outline btn-cyan" onclick="openLink('https://www.roblox.com/users/123456789/profile')">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <span class="prompt-cyan">&copy;</span> 2024 Kryptex. Made with 
+                <span class="footer-heart">❤️</span> for the Roblox community.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
